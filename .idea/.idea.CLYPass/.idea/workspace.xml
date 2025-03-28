@@ -8,12 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7663501-152a-465b-8a21-f9a795448971" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CLYPassBackend/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CLYPass/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CLYPass/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CLYPass/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CLYPass/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CLYPass.sln" beforeDir="false" afterPath="$PROJECT_DIR$/CLYPass.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CLYPassBackend/CLYPassBackend.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CLYPassBackend/CLYPassBackend.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +128,7 @@
       <updated>1729617043273</updated>
       <workItem from="1729617045442" duration="179000" />
       <workItem from="1743177650867" duration="7144000" />
-      <workItem from="1743187919274" duration="184000" />
+      <workItem from="1743187919274" duration="700000" />
     </task>
     <servers />
   </component>
