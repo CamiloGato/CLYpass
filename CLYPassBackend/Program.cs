@@ -32,17 +32,6 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         }
     );
 
-builder.WebHost.ConfigureKestrel(
-    options =>
-    {
-        options.ListenAnyIP(80);
-        options.ListenAnyIP(443, listenOptions =>
-        {
-            listenOptions.UseHttps("/https/cert.pem", "/https/key.pem");
-        });
-    }
-);
-
 WebApplication app = builder.Build();
 
 app.UseAuthentication();

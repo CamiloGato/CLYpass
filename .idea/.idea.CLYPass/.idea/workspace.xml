@@ -10,6 +10,7 @@
     <list default="true" id="c7663501-152a-465b-8a21-f9a795448971" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CLYPass/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CLYPass/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CLYPassBackend/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CLYPassBackend/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +143,7 @@
       <workItem from="1743177650867" duration="7144000" />
       <workItem from="1743187919274" duration="6101000" />
       <workItem from="1743624848294" duration="19000" />
-      <workItem from="1743624889317" duration="2366000" />
+      <workItem from="1743624889317" duration="3020000" />
     </task>
     <servers />
   </component>

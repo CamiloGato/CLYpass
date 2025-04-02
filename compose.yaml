@@ -6,4 +6,4 @@
       dockerfile: CLYPassBackend/Dockerfile
     environment:
       - ASPNETCORE_ENVIRONMENT=Docker
-      - ASPNETCORE_URLS=https://+:80
+      - ASPNETCORE_URLS=http://+:80
