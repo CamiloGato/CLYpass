@@ -1,12 +1,9 @@
-﻿version: "3.8"
-name: book-manager
-
-services:
-  api:
-    container_name: book-manager
-    image: book-manager:latest
+﻿services:
+  clypassbackend:
+    image: clypassbackend
+    build:
+      context: .
+      dockerfile: CLYPassBackend/Dockerfile
     environment:
       - ASPNETCORE_ENVIRONMENT=Docker
-      - ASPNETCORE_URLS=http://+:5432
-    ports:
-      - 5432:5432
+      - ASPNETCORE_URLS=https://+:80
