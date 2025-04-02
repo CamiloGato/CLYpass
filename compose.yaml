@@ -7,3 +7,7 @@
     environment:
       - ASPNETCORE_ENVIRONMENT=Docker
       - ASPNETCORE_URLS=http://+:80
+    ports:
+      - "8080:8080"
+      - "80:80"
+      - "443:443"
