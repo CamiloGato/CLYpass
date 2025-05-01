@@ -1,13 +1,40 @@
 ﻿services:
-  clypassbackend:
+  db:
+    image: postgres:latest
+    container_name: postgres-db
+    environment:
+      POSTGRES_USER: clypass
+      POSTGRES_PASSWORD: clypass
+      POSTGRES_DB: database
+    ports:
+      - "5432:5432"
+
+  backend:
     image: clypassbackend
     build:
       context: .
       dockerfile: CLYPassBackend/Dockerfile
+      platforms:
+        - linux/amd64
     environment:
-      - ASPNETCORE_ENVIRONMENT=Docker
-      - ASPNETCORE_URLS=http://+:80
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_NAME: mydatabase
+      DB_USER: myuser
+      DB_PASSWORD: mypassword
+      ASPNETCORE_ENVIRONMENT: Docker
+      ASPNETCORE_URLS: https://+:80
+    depends_on:
+      - db
+
     ports:
-      - "8080:8080"
       - "80:80"
-      - "443:443"
+
+    command: [
+      "sh",
+      "-c",
+      "until pg_isready -h db -p 5432; do echo waiting for db; sleep 2; done && dotnet MyApp.dll"
+    ]
+
+volumes:
+  postgres-db:
